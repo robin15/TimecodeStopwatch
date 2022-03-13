@@ -51,19 +51,19 @@ namespace TimecodeStopwatch
 
         DateTime startDT = DateTime.Now;
 
-        private void button1_Click(object sender, EventArgs e)
+        private void start_Click(object sender, EventArgs e)
         {
             startDT = DateTime.Now;
             _timer.Start();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void stop_Click(object sender, EventArgs e)
         {
             _timer.Stop();
             _timeSpan += DateTime.Now - startDT;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void reset_Click(object sender, EventArgs e)
         {
             _timer.Stop();
             _timeSpan = new TimeSpan(0);

@@ -79,7 +79,7 @@ namespace TimecodeStopwatch
             this.start.TabIndex = 1;
             this.start.Text = "Start";
             this.start.UseVisualStyleBackColor = false;
-            this.start.Click += new System.EventHandler(this.button1_Click);
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // stop
             // 
@@ -91,7 +91,7 @@ namespace TimecodeStopwatch
             this.stop.TabIndex = 2;
             this.stop.Text = "Stop";
             this.stop.UseVisualStyleBackColor = false;
-            this.stop.Click += new System.EventHandler(this.button2_Click);
+            this.stop.Click += new System.EventHandler(this.stop_Click);
             // 
             // reset
             // 
@@ -103,7 +103,7 @@ namespace TimecodeStopwatch
             this.reset.TabIndex = 3;
             this.reset.Text = "Reset";
             this.reset.UseVisualStyleBackColor = false;
-            this.reset.Click += new System.EventHandler(this.button3_Click);
+            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // groupBox1
             // 
