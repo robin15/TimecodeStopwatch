@@ -31,7 +31,7 @@ namespace TimecodeStopwatch
         private void InitializeComponent()
         {
             System.Windows.Forms.PictureBox pictureBox1;
-            this.label1 = new System.Windows.Forms.Label();
+            this.timecode = new System.Windows.Forms.Label();
             this.start = new System.Windows.Forms.Button();
             this.stop = new System.Windows.Forms.Button();
             this.reset = new System.Windows.Forms.Button();
@@ -58,16 +58,16 @@ namespace TimecodeStopwatch
             pictureBox1.TabStop = false;
             pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // label1
+            // timecode
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("MS UI Gothic", 80F);
-            this.label1.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label1.Location = new System.Drawing.Point(66, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(674, 134);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "00:00:00:00";
+            this.timecode.AutoSize = true;
+            this.timecode.Font = new System.Drawing.Font("MS UI Gothic", 80F);
+            this.timecode.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.timecode.Location = new System.Drawing.Point(66, 26);
+            this.timecode.Name = "timecode";
+            this.timecode.Size = new System.Drawing.Size(674, 134);
+            this.timecode.TabIndex = 0;
+            this.timecode.Text = "00:00:00:00";
             // 
             // start
             // 
@@ -178,7 +178,7 @@ namespace TimecodeStopwatch
             this.Controls.Add(this.reset);
             this.Controls.Add(this.stop);
             this.Controls.Add(this.start);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.timecode);
             this.Controls.Add(this.pictureBox2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -195,7 +195,7 @@ namespace TimecodeStopwatch
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label timecode;
         private System.Windows.Forms.Button start;
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Button reset;

@@ -46,7 +46,7 @@ namespace TimecodeStopwatch
                     milliSec = (timeSpan.Milliseconds * 60 / 1000);
                     break;
             }
-            label1.Text = String.Format("{0:00}:{1:00}:{2:00}:{3:00}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds, milliSec);
+            timecode.Text = String.Format("{0:00}:{1:00}:{2:00}:{3:00}", timeSpan.Hours, timeSpan.Minutes, timeSpan.Seconds, milliSec);
         }
 
         DateTime startDT = DateTime.Now;
@@ -68,7 +68,7 @@ namespace TimecodeStopwatch
             _timer.Stop();
             _timeSpan = new TimeSpan(0);
             startDT = DateTime.Now;
-            label1.Text = String.Format("00:00:00:00");
+            timecode.Text = String.Format("00:00:00:00");
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
