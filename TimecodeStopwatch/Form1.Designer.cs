@@ -68,6 +68,8 @@ namespace TimecodeStopwatch
             this.timecode.Size = new System.Drawing.Size(674, 134);
             this.timecode.TabIndex = 0;
             this.timecode.Text = "00:00:00:00";
+            this.timecode.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.timecode.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseMove);
             // 
             // start
             // 
