@@ -55,12 +55,18 @@ namespace TimecodeStopwatch
         {
             startDT = DateTime.Now;
             _timer.Start();
+            this.start.Enabled = false;
+            this.stop.Enabled = true;
+            this.reset.Enabled = true;
         }
 
         private void stop_Click(object sender, EventArgs e)
         {
             _timer.Stop();
             _timeSpan += DateTime.Now - startDT;
+            this.start.Enabled = true;
+            this.stop.Enabled = false;
+            this.reset.Enabled = true;
         }
 
         private void reset_Click(object sender, EventArgs e)
@@ -69,27 +75,41 @@ namespace TimecodeStopwatch
             _timeSpan = new TimeSpan(0);
             startDT = DateTime.Now;
             timecode.Text = String.Format("00:00:00:00");
+            this.start.Enabled = true;
+            this.stop.Enabled = false;
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
             _timer.Stop();
-            _timeSpan += DateTime.Now - startDT;
+            _timeSpan = new TimeSpan(0);
+            startDT = DateTime.Now;
             _fps = FR.fps24;
+            timecode.Text = String.Format("00:00:00:00");
+            this.start.Enabled = true;
+            this.stop.Enabled = false;
         }
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
             _timer.Stop();
-            _timeSpan += DateTime.Now - startDT;
+            _timeSpan = new TimeSpan(0);
+            startDT = DateTime.Now;
             _fps = FR.fps30;
+            timecode.Text = String.Format("00:00:00:00");
+            this.start.Enabled = true;
+            this.stop.Enabled = false;
         }
 
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
             _timer.Stop();
-            _timeSpan += DateTime.Now - startDT;
+            _timeSpan = new TimeSpan(0);
+            startDT = DateTime.Now;
             _fps = FR.fps60;
+            timecode.Text = String.Format("00:00:00:00");
+            this.start.Enabled = true;
+            this.stop.Enabled = false;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)

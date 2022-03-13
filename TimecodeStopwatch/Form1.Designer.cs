@@ -86,6 +86,7 @@ namespace TimecodeStopwatch
             // stop
             // 
             this.stop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.stop.Enabled = false;
             this.stop.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stop.Location = new System.Drawing.Point(216, 208);
             this.stop.Name = "stop";
