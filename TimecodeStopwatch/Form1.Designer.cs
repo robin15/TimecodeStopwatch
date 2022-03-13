@@ -1,6 +1,6 @@
 ﻿using System.Windows.Forms;
 
-namespace TimecodeTimer
+namespace TimecodeStopwatch
 {
     partial class Form1
     {
@@ -49,7 +49,7 @@ namespace TimecodeTimer
             // pictureBox1
             // 
             pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            pictureBox1.Image = global::TimecodeTimer.Properties.Resources.close;
+            pictureBox1.Image = global::TimecodeStopwatch.Properties.Resources.close;
             pictureBox1.Location = new System.Drawing.Point(822, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new System.Drawing.Size(30, 29);
